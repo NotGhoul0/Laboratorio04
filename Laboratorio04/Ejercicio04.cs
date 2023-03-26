@@ -8,7 +8,7 @@ namespace Laboratorio04
 {
     public class Ejercicio04
     {
-        public int[] CalcularBilletes(int cantidad, int[] billetes)
+        public int[] CalculaBilletes(int cantidad, int[] billetes)
         {
             int[] result = new int[billetes.Length];
 
