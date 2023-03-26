@@ -8,22 +8,22 @@ namespace Laboratorio04
 {
     public class Ejercicio03
     {
-        public string Sumar(string num1, string num2)
+        public string Sumar(string num, string num2)
         {
-            if ("0".Equals(num1))
+            if ("0".Equals(num))
                 return num2;
 
             if ("0".Equals(num2))
-                return num1;
+                return num;
 
             string result = "";
 
-            int i = num1.Length - 1, j = num2.Length - 1;
+            int i = num.Length - 1, j = num2.Length - 1;
             int acarreo = 0;
 
             while (i >= 0 && j >= 0)
             {
-                int r = acarreo + (num1[i] - '0') + (num2[j] - '0');
+                int r = acarreo + (num[i] - '0') + (num2[j] - '0');
                 acarreo = r / 10;
 
                 result = (r % 10) + result;
@@ -34,7 +34,7 @@ namespace Laboratorio04
 
             while (i >= 0)
             {
-                int r = acarreo + (num1[i] - '0');
+                int r = acarreo + (num[i] - '0');
                 acarreo = r / 10;
 
                 result = (r % 10) + result;
