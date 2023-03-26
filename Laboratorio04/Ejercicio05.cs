@@ -8,14 +8,14 @@ namespace Laboratorio04
 {
     public class Ejercicio05
     {
-        public int[] CalcularBilletes(int cantidad, int[,] billetes)
+        public int[] CalcularBilletes(int cantidad, int[,] billete)
         {
-            int[] resultado = new int[billetes.GetLength(0)];
+            int[] resultado = new int[billete.GetLength(0)];
 
             for (int i = 0; i < resultado.Length; i++)
             {
-                int denominacion = billetes[i, 0];
-                int limiteDenominacion = billetes[i, 1];
+                int denominacion = billete[i, 0];
+                int limiteDenominacion = billete[i, 1];
 
                 int posiblesBilletes = cantidad / denominacion;
 
