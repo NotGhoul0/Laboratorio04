@@ -10,14 +10,14 @@ namespace Laboratorio04
     {
         public double[] Calcular(int[] nums)
         {
-            double suma = 0.0;
+            double sum = 0.0;
 
             for (int i = 0; i < nums.Length; i++)
             {
-                suma = suma + nums[i];
+                sum = sum + nums[i];
             }
 
-            return new double[] { suma, suma / nums.Length };
+            return new double[] { sum, sum / nums.Length };
         }
     }
 }
