@@ -8,9 +8,9 @@ namespace Laboratorio04
 {
     public class Ejercicio01
     {
-        public static int Sumar(int a, int b)
+        public static int Sumar(int b, int c)
         {
-            return a + b;
+            return b + c;
         }
     }
 }
